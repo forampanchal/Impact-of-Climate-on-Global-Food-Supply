@@ -44,5 +44,5 @@ XGBoost emerged as the best performer due to its robustness with large, complex 
 - Experiment with advanced deep learning methods like CNNs and Transformers
 - Integrate real-time monitoring using IoT for precision agriculture
 
-## 📂 Repository Structure
+
 
