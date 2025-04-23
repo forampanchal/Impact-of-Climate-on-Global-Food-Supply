@@ -6,6 +6,16 @@ This project investigates how climate change affects global food security by ana
 
 As climate-driven events such as droughts, floods, and heatwaves become more frequent, their impact on food systems is growing. Our goal is to develop machine learning models that help forecast changes in crop yields based on environmental variables, allowing communities and policymakers to better plan for food resilience.
 
+## 📊 Exploratory Data Analysis (EDA)
+
+Before modeling, we performed extensive EDA to understand variable distributions, correlations, and trends:
+- Heatmaps and pair plots to assess multicollinearity
+- Time-series plots to observe long-term yield changes
+- Box plots and histograms for climate variability
+- Highlighted regional differences and anomaly years
+
+These insights helped refine feature selection and detect outliers and data quality issues.
+
 ## 🧠 Machine Learning Models Used
 
 We implemented and compared three models:
@@ -27,6 +37,14 @@ We implemented and compared three models:
 - Train-test split with model tuning (grid search for XGBoost)
 - Evaluation using R² and RMSE for regression tasks
 
+## 🧠 Model Interpretability with SHAP
+
+To interpret model predictions and enhance transparency:
+- **SHAP (SHapley Additive exPlanations)** was used on the XGBoost model
+- Identified **rainfall**, **temperature**, and **CO₂ emissions** as key drivers of crop yield
+- Plotted SHAP summary and dependence plots to explain feature impact on predictions
+- Helped translate model outputs into actionable climate policy insights
+
 ## 📈 Key Results
 
 | Model               | R² Score | RMSE  |
@@ -43,6 +61,3 @@ XGBoost emerged as the best performer due to its robustness with large, complex 
 - Extend to region-specific or crop-specific models
 - Experiment with advanced deep learning methods like CNNs and Transformers
 - Integrate real-time monitoring using IoT for precision agriculture
-
-
-
